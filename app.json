@@ -1,5 +1,8 @@
 {
   "name": "Dragon-Ball-API",
+  "description": "A sample API, which can easily be deployed to Heroku.",
+  "image": "heroku/python",
+  "keywords": ["python", "django" ],
   "scripts": {
     "django":"pip install django==1.7.4",
     "make_migration":"python manage.py makemigrations",
@@ -12,10 +15,5 @@
   },
   "addons": [
 
-  ],
-  "buildpacks": [
-    {
-      "url": "heroku/python"
-    }
   ]
 }
