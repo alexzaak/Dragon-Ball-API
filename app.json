@@ -1,6 +1,10 @@
 {
   "name": "Dragon-Ball-API",
   "scripts": {
+    "django":"pip install django==1.7.4",
+    "make_migration":"python manage.py makemigrations",
+    "migrate":"python manage.py migrate",
+    "start":"python manage.py runserver"
   },
   "env": {
   },
