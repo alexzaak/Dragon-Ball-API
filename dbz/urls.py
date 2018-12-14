@@ -1,5 +1,6 @@
 from django.conf.urls import patterns, include, url
 from django.contrib import admin
+import character.views
 
 urlpatterns = patterns('',
     url(r'^$','sagas.views.index'),
@@ -11,5 +12,5 @@ urlpatterns = patterns('',
     url(r'^sagas/(?P<id_saga>\d+)/','sagas.views.get_saga'),
     url(r'^fusion/$','fusion.views.get_all_fusions'),
     url(r'^fusion/(?P<name_or_id>\d+)','fusion.views.get_fusion'),
-    url(r'^seeds/$','character.views.seeds')
+    url(r'^seeds/$', character.views.seeds)
 )
