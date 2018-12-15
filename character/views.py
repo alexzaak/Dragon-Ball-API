@@ -50,7 +50,7 @@ def get_character(request,name_or_id):
         result["nm_character"] = allcharacters.nm_character
         result["img_character"] = allcharacters.img_character
         result["fighting_power"] = allcharacters.fighting_power
-        result["race"] = type_character.objects.get(id=int(allcharacters.type_id_id)).nm_type_character.id
+        result["race"] = type_character.objects.get(id=int(allcharacters.type_id_id)).nm_type_character
         result["saga"] = saga.objects.get(id=int(allcharacters.saga_id_id)).nm_saga
     else:
         alllike = []
