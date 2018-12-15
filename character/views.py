@@ -37,8 +37,8 @@ def get_characters(request):
         charc["nm_character"] = chares.nm_character
         charc["img_character"]= chares.img_character
         charc["fighting_power"]= chares.fighting_power
-        charc["race"]= type_character.objects.get(id=int(chares.type_id)).nm_type_character
-        charc["saga"]= saga.objects.get(id=int(chares.saga_id)).nm_saga
+        charc["saga"]= saga.objects.get(id=int(chares.saga_id_id)).nm_saga
+        charc["race"]= type_character.objects.get(id=int(chares.type_id_id)).nm_type_character
         personagens.append(charc)
     return HttpResponse(json.dumps(personagens), content_type='application/json')
 
