@@ -50,8 +50,8 @@ def get_character(request,name_or_id):
         result["nm_character"] = allcharacters.nm_character
         result["img_character"] = allcharacters.img_character
         result["fighting_power"] = allcharacters.fighting_power
-        result["race"] = type_character.objects.get(id=int(allcharacters.type_id)).nm_type_character.id
-        result["saga"] = saga.objects.get(id=int(allcharacters.saga_id)).nm_saga
+        result["race"] = type_character.objects.get(id=int(allcharacters.type_id_id)).nm_type_character.id
+        result["saga"] = saga.objects.get(id=int(allcharacters.saga_id_id)).nm_saga
     else:
         alllike = []
         allcharacters = character.objects.filter(string__contains=name_or_id)
@@ -61,8 +61,8 @@ def get_character(request,name_or_id):
             charc["nm_character"] = chares.nm_character
             charc["img_character"]= chares.img_character
             charc["fighting_power"]= chares.fighting_power
-            charc["race"]= type_character.objects.get(id=int(chares.type_id)).nm_type_character
-            charc["saga"]= saga.objects.get(id=int(chares.saga_id)).nm_saga
+            charc["race"]= type_character.objects.get(id=int(chares.type_id_id)).nm_type_character
+            charc["saga"]= saga.objects.get(id=int(chares.saga_id_id)).nm_saga
             alllike.append(chares)
         result["characters"] = alllike
     return HttpResponse(json.dumps(result), content_type='application/json')
