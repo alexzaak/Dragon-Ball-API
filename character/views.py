@@ -112,10 +112,10 @@ def seeds(request):
     p.type_id_id = 2
     p.saga_id_id = 2
     p.save()
-    p = character(nm_character="Goku",img_character="https://vignette.wikia.nocookie.net/dragonball/images/5/5b/Gokusteppingoutofaspaceship.jpg/revision/latest/scale-to-width-down/224?cb=20150325220848",fighting_power="924")
-    p.type_id_id = 2
-    p.saga_id_id = 4
-    p.save()
+    goku = character(nm_character="Goku",img_character="https://vignette.wikia.nocookie.net/dragonball/images/5/5b/Gokusteppingoutofaspaceship.jpg/revision/latest/scale-to-width-down/224?cb=20150325220848",fighting_power="924")
+    goku.type_id_id = 2
+    goku.saga_id_id = 4
+    goku.save()
     p = character(nm_character="Goku Super Sayajin 1",img_character="https://dreager1.files.wordpress.com/2011/08/snap2149516qs7.jpg",fighting_power="150000000")
     p.type_id_id = 2
     p.saga_id_id = 4
@@ -180,10 +180,10 @@ def seeds(request):
     p.type_id_id = 2
     p.saga_id_id = 2
     p.save()
-    p = character(nm_character="Vegeta",img_character="",fighting_power="")
-    p.type_id_id = 2
-    p.saga_id_id = 4
-    p.save()
+    vegeta = character(nm_character="Vegeta",img_character="",fighting_power="")
+    vegeta.type_id_id = 2
+    vegeta.saga_id_id = 4
+    vegeta.save()
     p = character(nm_character="Vegeta Super Sayajin 1",img_character="",fighting_power="")
     p.type_id_id = 2
     p.saga_id_id = 4
@@ -197,15 +197,15 @@ def seeds(request):
     p.saga_id_id = 4
     p.save()
     
-    tp = fusion(type_fusion_id=1,character1_id=1,character2_id=2,nm_character_fusion="Vegetto")
+    tp = fusion(type_fusion_id=tpf.type_id,character1_id=goku,character2_id=vegeta,nm_character_fusion="Vegetto")
     tp.character1_id_id = 2
     tp.character2_id_id = 15
-    tp.type_fusion_id_id = tpf
+    tp.type_fusion_id_id = 1
     tp.save()
-    tp = fusion(type_fusion_id=2,character1_id=1,character2_id=2,nm_character_fusion="Gojeta")
+    tp = fusion(type_fusion_id=tpf2,character1_id=goku,character2_id=vegeta,nm_character_fusion="Gojeta")
     tp.character1_id_id = 14
     tp.character2_id_id = 21
-    tp.type_fusion_id_id = tpf2
+    tp.type_fusion_id_id = 2
     tp.save()
     
     return HttpResponse("201")
