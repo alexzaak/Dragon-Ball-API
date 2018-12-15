@@ -197,7 +197,7 @@ def seeds(request):
     p.saga_id_id = 4
     p.save()
     
-    tp = fusion(type_fusion_id=tpf.type_id,character1_id=goku,character2_id=vegeta,nm_character_fusion="Vegetto")
+    tp = fusion(type_fusion_id=tpf,character1_id=goku,character2_id=vegeta,nm_character_fusion="Vegetto")
     tp.character1_id_id = 2
     tp.character2_id_id = 15
     tp.type_fusion_id_id = 1
