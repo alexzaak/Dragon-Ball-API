@@ -69,14 +69,14 @@ def get_character(request,name_or_id):
     
 def seeds(request):
     
-    sg = saga(nm_saga="Dragon Ball",ds_saga="Dragon Ball é o anime que deu inicio a saga de Son Goku e a procura pelas esferas do dragao que quando unidas invoca o grande dragao Shenlong que realizara quaisquer desejo. Goku juntamente com seus amigos Mestre Kame, Kuririn, Bulma, Yancha vao viver grandes aventuras desde a batalha contra a terrivel organização Red Ribbon e o seu mortal assassino Tao-Pai-Pai, passando pelo grande torneio de artes marciais lutando contra Tenchin-han e Kaos e acabando com a saga de Piccollo e sua tentativa de destruir a Terra",img_saga="https://i.pinimg.com/originals/77/82/f0/7782f08f34d373c4caf42aee9160a32d.jpg")
-    sg.save()
-    sg = saga(nm_saga="Dragon Ball Z",ds_saga="Depois da batalha contra Piccollo Dai-Maoh goku se casa com a Princesa Chichi e tem um filho chamado Gohan e vivem em paz na floresta até a chegada dos temíveis Sayajins que vêem do espaço a procura de Goku. Nesta Saga Son-Goku descobre sua verdadeira origem sayajin combatendo o impiedoso Vegeta e ainda em Dragon Ball Z vai viver incriveis lutas contra o temível Freeza no Planeta Namek, contra o super andróide Cell em seu torneio de artes marciais acabando na batalha contra o monstro Boo. Assista Dragon Ball Z e conheça o verdadeiro poder do Lendário Super Sayajin e suas evoluções!",img_saga="http://ptanime.com/wp-content/uploads/2015/05/Dragon_Ball_Z_Analise_Imagem_Saga_Majin_Buu.jpg")
-    sg.save()
-    sg = saga(nm_saga="Dragon Ball GT",ds_saga="Este anime se passa 10 anos depois da saga de Dragon Ball Z e esta focado em 3 personagens principais: Son Goku, sua neta Pan e o Jovem Trunks.Graças ao pedido filho de Pilaf (inimigo de Goku em Dragon Ball) que recolhe as dragon balls, Goku se torna novamente criança mas as dragon balls perdem seu poder e com isso a Terra corre perigo pois as esferas do dragão estão intimamente ligadas ao planeta, assim Goku, Pan e Trunks saem a procura das blacks dragon ball no espaço para ressucitarem as esferas do dragão da Terra, será que chegarão a tempo de salvar a Terra? Enquanto Goku esta fora , Bebi o tsufurujin está dominando a mente dos terráqueos e também da Familia de Goku: Chichi, Gohan e Goten, esta é uma empolgante aventura onde poderemos ver a luta de goku contra os terriveis dragões e também o poder máximo dos sayajin, o super sayajin 4.",img_saga="https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/9/95/Black_Star_DB_Saga.png/revision/latest?cb=20160910202651")
-    sg.save()
-    sg = saga(nm_saga="Dragon Ball Super",ds_saga="a continuação de Dragon Ball Z e agora com Lorde Bils a procura do deus super sayajin",img_saga="https://i.pinimg.com/originals/81/57/19/81571933f0d137e2d6c98304e0376311.png")
-    sg.save()
+    sg1 = saga(nm_saga="Dragon Ball",ds_saga="Dragon Ball é o anime que deu inicio a saga de Son Goku e a procura pelas esferas do dragao que quando unidas invoca o grande dragao Shenlong que realizara quaisquer desejo. Goku juntamente com seus amigos Mestre Kame, Kuririn, Bulma, Yancha vao viver grandes aventuras desde a batalha contra a terrivel organização Red Ribbon e o seu mortal assassino Tao-Pai-Pai, passando pelo grande torneio de artes marciais lutando contra Tenchin-han e Kaos e acabando com a saga de Piccollo e sua tentativa de destruir a Terra",img_saga="https://i.pinimg.com/originals/77/82/f0/7782f08f34d373c4caf42aee9160a32d.jpg")
+    sg1.save()
+    sg2 = saga(nm_saga="Dragon Ball Z",ds_saga="Depois da batalha contra Piccollo Dai-Maoh goku se casa com a Princesa Chichi e tem um filho chamado Gohan e vivem em paz na floresta até a chegada dos temíveis Sayajins que vêem do espaço a procura de Goku. Nesta Saga Son-Goku descobre sua verdadeira origem sayajin combatendo o impiedoso Vegeta e ainda em Dragon Ball Z vai viver incriveis lutas contra o temível Freeza no Planeta Namek, contra o super andróide Cell em seu torneio de artes marciais acabando na batalha contra o monstro Boo. Assista Dragon Ball Z e conheça o verdadeiro poder do Lendário Super Sayajin e suas evoluções!",img_saga="http://ptanime.com/wp-content/uploads/2015/05/Dragon_Ball_Z_Analise_Imagem_Saga_Majin_Buu.jpg")
+    sg2.save()
+    sg3 = saga(nm_saga="Dragon Ball GT",ds_saga="Este anime se passa 10 anos depois da saga de Dragon Ball Z e esta focado em 3 personagens principais: Son Goku, sua neta Pan e o Jovem Trunks.Graças ao pedido filho de Pilaf (inimigo de Goku em Dragon Ball) que recolhe as dragon balls, Goku se torna novamente criança mas as dragon balls perdem seu poder e com isso a Terra corre perigo pois as esferas do dragão estão intimamente ligadas ao planeta, assim Goku, Pan e Trunks saem a procura das blacks dragon ball no espaço para ressucitarem as esferas do dragão da Terra, será que chegarão a tempo de salvar a Terra? Enquanto Goku esta fora , Bebi o tsufurujin está dominando a mente dos terráqueos e também da Familia de Goku: Chichi, Gohan e Goten, esta é uma empolgante aventura onde poderemos ver a luta de goku contra os terriveis dragões e também o poder máximo dos sayajin, o super sayajin 4.",img_saga="https://vignette2.wikia.nocookie.net/dbz-dokkanbattle/images/9/95/Black_Star_DB_Saga.png/revision/latest?cb=20160910202651")
+    sg3.save()
+    sg4 = saga(nm_saga="Dragon Ball Super",ds_saga="a continuação de Dragon Ball Z e agora com Lorde Bils a procura do deus super sayajin",img_saga="https://i.pinimg.com/originals/81/57/19/81571933f0d137e2d6c98304e0376311.png")
+    sg4.save()
     tpf = type_fusion(nm_type_fusion="Potara Fusion")
     tpf.save()
     tpf2 = type_fusion(nm_type_fusion="Fusion Dance")
@@ -94,11 +94,11 @@ def seeds(request):
 
     p = character(nm_character="Goku",img_character="http://www.imagenswiki.com/Uploads/imagenswiki.com/ImagensGrandes/son-goku-crianca.jpg",fighting_power="260")
     p.type_id_id = 2
-    p.saga_id_id = 2
+    p.saga_id = sg2
     p.save()
     p = character(nm_character="Goku",img_character="https://vignette.wikia.nocookie.net/dragonball/images/5/5b/Gokusteppingoutofaspaceship.jpg/revision/latest/scale-to-width-down/224?cb=20150325220848",fighting_power="924")
     p.type_id_id = 2
-    p.saga_id_id = 2
+    p.saga_id = sg2
     p.save()
     p = character(nm_character="Goku Super Sayajin 1",img_character="https://dreager1.files.wordpress.com/2011/08/snap2149516qs7.jpg",fighting_power="150000000")
     p.type_id_id = 2
