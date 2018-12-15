@@ -31,8 +31,8 @@ def get_saga(request, id_saga):
     allcharacter = []
     for carinhas in personagens:
         pers= {}
-        pers["nm_character"] = personagens.nm_character
-        pers["id"] = personagens.id
+        pers["nm_character"] = carinhas.nm_character
+        pers["id"] = carinhas.id
         allcharacter.append(pers)
     sag["id"] = historia.id
     sag["nm_saga"] = historia.nm_saga
