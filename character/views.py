@@ -200,12 +200,12 @@ def seeds(request):
     tp = fusion(type_fusion_id=1,character1_id=1,character2_id=2,nm_character_fusion="Vegetto")
     tp.character1_id_id = 2
     tp.character2_id_id = 15
-    tp.type_fusion_id_id = 1
+    tp.type_fusion_id_id = tpf
     tp.save()
     tp = fusion(type_fusion_id=2,character1_id=1,character2_id=2,nm_character_fusion="Gojeta")
     tp.character1_id_id = 14
     tp.character2_id_id = 21
-    tp.type_fusion_id_id = 2
+    tp.type_fusion_id_id = tpf2
     tp.save()
     
     return HttpResponse("201")
