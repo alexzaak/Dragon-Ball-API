@@ -26,7 +26,7 @@ def get_all_sagas(request):
 
 def get_saga(request, id_saga):
     historia = saga.objects.get(id=int(id_saga))
-    personagens = character.objects.get(saga_id_id=int(id_saga))
+    personagens = character.objects.get(saga_id.id=int(id_saga))
     sag = {}
     allcharacter = []
     for carinhas in personagens:
