@@ -29,7 +29,7 @@ def get_type(request, type_character_id):
     return HttpResponse(json.dumps(race), content_type='application/json')
 
 def get_character_by_saga_id(request, id_saga): 
-    characters = character.objects.find(saga_id=int(id_saga))
+    characters = character.objects.filter(saga_id=int(id_saga))
     personagens = []
     for chares in characters:
         charc = {}
