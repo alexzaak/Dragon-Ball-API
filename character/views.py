@@ -38,6 +38,7 @@ def get_character_by_saga_id(request, id_saga):
         charc["img_character"]= chares.img_character
         charc["fighting_power"]= chares.fighting_power
         charc["saga"]= saga.objects.get(id=int(chares.saga_id_id)).nm_saga
+        charc["saga_id"]= int(chares.saga_id_id)
         charc["race"]= type_character.objects.get(id=int(chares.type_id_id)).nm_type_character
         personagens.append(charc)
     return HttpResponse(json.dumps(personagens), content_type='application/json')
@@ -52,6 +53,7 @@ def get_characters(request):
         charc["img_character"]= chares.img_character
         charc["fighting_power"]= chares.fighting_power
         charc["saga"]= saga.objects.get(id=int(chares.saga_id_id)).nm_saga
+        charc["saga_id"]= int(chares.saga_id_id)
         charc["race"]= type_character.objects.get(id=int(chares.type_id_id)).nm_type_character
         personagens.append(charc)
     return HttpResponse(json.dumps(personagens), content_type='application/json')
@@ -77,6 +79,7 @@ def get_character(request,name_or_id):
             charc["fighting_power"]= chares.fighting_power
             charc["race"]= type_character.objects.get(id=int(chares.type_id_id)).nm_type_character
             charc["saga"]= saga.objects.get(id=int(chares.saga_id_id)).nm_saga
+            charc["saga_id"]= int(chares.saga_id_id)
             alllike.append(chares)
         result["characters"] = alllike
     return HttpResponse(json.dumps(result), content_type='application/json')
