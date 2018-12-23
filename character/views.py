@@ -109,10 +109,9 @@ def seeds(request):
     sg4.save()
 
     sg5 = saga(
-        nm_saga="Dragon Ball AF"
-        ds_saga="Dragonball AF ist eine Art Fan-Fiction über den Manga und Anime Dragonball von Akira Toriyama, der darauf folgte, dass viele Fans sehr traurig darüber waren, dass Dragonball mit Dragonball GT als beendet galt. AF steht dabei für After Future. Manche Leute glauben, dass Dragonball AF auch wirklich existiert, aber das ist wohl jedem selbst überlassen. Im Internet geistert dieser Begriff allerdings schon seit mehreren Jahren umher und gewann so mehr und mehr an Bekanntheit, sodass immer mehr Seiten auf Dragonball AF hinweisen und sehr viele Bilder und Ähnliches entstanden."
-        img_saga="https://i.ytimg.com/vi/-xNbJ803Kkw/maxresdefault.jpg"
-    )
+        nm_saga="Dragon Ball AF",
+        ds_saga="Dragonball AF ist eine Art Fan-Fiction über den Manga und Anime Dragonball von Akira Toriyama, der darauf folgte, dass viele Fans sehr traurig darüber waren, dass Dragonball mit Dragonball GT als beendet galt. AF steht dabei für After Future. Manche Leute glauben, dass Dragonball AF auch wirklich existiert, aber das ist wohl jedem selbst überlassen. Im Internet geistert dieser Begriff allerdings schon seit mehreren Jahren umher und gewann so mehr und mehr an Bekanntheit, sodass immer mehr Seiten auf Dragonball AF hinweisen und sehr viele Bilder und Ähnliches entstanden.",
+        img_saga="https://i.ytimg.com/vi/-xNbJ803Kkw/maxresdefault.jpg")
     sg5.save()
 
     tpf = type_fusion(nm_type_fusion="Potara Fusion")
