@@ -149,21 +149,21 @@ def seeds(request):
         img_character="https://dreager1.files.wordpress.com/2011/08/snap2149516qs7.jpg",
         fighting_power="150000000")
     p.type_id_id = 2
-    p.saga_id_id = sg2
+    p.saga_id = sg2
     p.save()
     p = character(
         nm_character="Goku Super Saiyajin 2",
         img_character="https://vignette.wikia.nocookie.net/dragonball/images/a/ac/Goku-Super-Saiyan-2-.jpg/revision/latest?cb=20110426171840",
         fighting_power="6000000000")
     p.type_id_id = 2
-    p.saga_id_id = sg2
+    p.saga_id = sg2
     p.save()
     p = character(
         nm_character="Goku Super Saiyajin 3",
         img_character="https://vignette2.wikia.nocookie.net/dragonuniverse/images/8/89/SSJ3.png/revision/latest?cb=20160928233848",
         fighting_power="10000000000")
     p.type_id_id = 2
-    p.saga_id_id = sg2
+    p.saga_id = sg2
     p.save()
     goku = character(
         nm_character="Goku",
