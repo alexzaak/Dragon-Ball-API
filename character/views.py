@@ -107,10 +107,19 @@ def seeds(request):
         ds_saga="Dragon Ball Super ist eine Animeserie, die von Tōei Animation produziert wird. Die erste Folge wurde am 5. Juli 2015 ausgestrahlt. Sie ist der direkte Nachfolger zu Dragon Ball Z. Die Handlung spielt in der zehn Jahre umfassenden Lücke zwischen dem Sieg über Boo und dem Turnier, bei dem Son Goku auf Boos Wiedergeburt Oob trifft. Die Handlung beginnt 4 Jahre nach dem Sieg über Boo. Bei den ersten 27 Folgen handelt es sich inhaltlich um Neuerzählungen der Filme Kampf der Götter und Resurrection ‚F‘.",
         img_saga="https://i.pinimg.com/originals/81/57/19/81571933f0d137e2d6c98304e0376311.png")
     sg4.save()
+
+    sg5 = saga(
+        nm_saga="Dragon Ball AF"
+        ds_saga="Dragonball AF ist eine Art Fan-Fiction über den Manga und Anime Dragonball von Akira Toriyama, der darauf folgte, dass viele Fans sehr traurig darüber waren, dass Dragonball mit Dragonball GT als beendet galt. AF steht dabei für After Future. Manche Leute glauben, dass Dragonball AF auch wirklich existiert, aber das ist wohl jedem selbst überlassen. Im Internet geistert dieser Begriff allerdings schon seit mehreren Jahren umher und gewann so mehr und mehr an Bekanntheit, sodass immer mehr Seiten auf Dragonball AF hinweisen und sehr viele Bilder und Ähnliches entstanden."
+        img_saga="https://i.ytimg.com/vi/-xNbJ803Kkw/maxresdefault.jpg"
+    )
+    sg5.save()
+
     tpf = type_fusion(nm_type_fusion="Potara Fusion")
     tpf.save()
     tpf2 = type_fusion(nm_type_fusion="Fusionstanz")
     tpf2.save()
+
     tpp = type_character(nm_type_character="Mensch")
     tpp.save()
     tpp = type_character(nm_type_character="Saiyajin")
@@ -123,11 +132,11 @@ def seeds(request):
     tpp.save()
 
     p = character(
-        nm_character="Goku",
+        nm_character="Kid Goku",
         img_character="http://www.imagenswiki.com/Uploads/imagenswiki.com/ImagensGrandes/son-goku-crianca.jpg",
         fighting_power="260")
     p.type_id_id = 2
-    p.saga_id = sg2
+    p.saga_id = sg1
     p.save()
     p = character(
         nm_character="Goku",
@@ -141,21 +150,21 @@ def seeds(request):
         img_character="https://dreager1.files.wordpress.com/2011/08/snap2149516qs7.jpg",
         fighting_power="150000000")
     p.type_id_id = 2
-    p.saga_id_id = 2
+    p.saga_id_id = sg2
     p.save()
     p = character(
         nm_character="Goku Super Saiyajin 2",
         img_character="https://vignette.wikia.nocookie.net/dragonball/images/a/ac/Goku-Super-Saiyan-2-.jpg/revision/latest?cb=20110426171840",
         fighting_power="6000000000")
     p.type_id_id = 2
-    p.saga_id_id = 2
+    p.saga_id_id = sg2
     p.save()
     p = character(
         nm_character="Goku Super Saiyajin 3",
         img_character="https://vignette2.wikia.nocookie.net/dragonuniverse/images/8/89/SSJ3.png/revision/latest?cb=20160928233848",
         fighting_power="10000000000")
     p.type_id_id = 2
-    p.saga_id_id = 2
+    p.saga_id_id = sg2
     p.save()
     goku = character(
         nm_character="Goku",
